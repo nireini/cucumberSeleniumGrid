@@ -13,20 +13,12 @@ import java.util.Date;
 import java.util.List;
 
 import com.vimalselvam.cucumber.listener.Reporter;
+import enums.ByTypes;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.UnhandledAlertException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,11 +29,14 @@ import utils.DriverFactory;
 
 public class BasePage extends DriverFactory {
 	protected WebDriverWait wait;
+
+	protected WebDriverWait wait_Forty_seconds;
 	protected JavascriptExecutor jsExecutor;
 	private static String screenshotName;
 
 	public BasePage() throws IOException {
 		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+		this.wait_Forty_seconds = new WebDriverWait(driver, Duration.ofSeconds(40));
 		jsExecutor = ((JavascriptExecutor) driver);
 	}
 
@@ -235,7 +230,7 @@ public class BasePage extends DriverFactory {
 	 **********************************************************************************/
 	public boolean WaitUntilWebElementIsVisible(WebElement element) {
 		try {
-			this.wait.until(ExpectedConditions.visibilityOf(element));
+			this.wait_Forty_seconds.until(ExpectedConditions.visibilityOf(element));
 			System.out.println("WebElement is visible using locator: " + "<" + element.toString() + ">");
 			return true;
 		} catch (Exception e) {
@@ -257,6 +252,60 @@ public class BasePage extends DriverFactory {
 		}
 	}
 
+
+	public WebElement WaitUntilWebElementIsVisibleUsingLocatorStringValue(ByTypes type, String value, boolean mandatory) {
+
+		WebElement element = null;
+
+		try {
+			switch (type) {
+
+				case xpath:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(value)));
+					break;
+				case className:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.className(value)));
+					break;
+
+				case id:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.id(value)));
+					break;
+
+				case link:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(value)));
+					break;
+
+				case name:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.name(value)));
+					break;
+
+				case css:
+					element = this.wait_Forty_seconds.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(value)));
+					break;
+				default:
+					break;
+			}
+
+			System.out.println("Element is visible using By locator: " + "<" + value + ">");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("WebElement is NOT visible, using By locator: " + "<" + value + ">");
+
+			if (mandatory == true) {
+				Assert.fail("WebElement is NOT visible, Exception: " + e.getMessage());
+			}
+		}
+
+		if (element == null && mandatory == true) {
+			System.out.println("WebElement is NOT visible, using By locator: " + "<" + value + ">");
+
+			Assert.fail("Mandatory element " + value + " was not found");
+		}
+
+		return element;
+
+	}
+
 	public boolean isElementClickable(WebElement element) {
 		try {
 			this.wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -275,6 +324,41 @@ public class BasePage extends DriverFactory {
 
 	/**********************************************************************************/
 	/**********************************************************************************/
+
+
+	/**********************************************************************************
+	 **IFRAME METHODS
+	 **********************************************************************************/
+
+	/**********************************************************************************/
+	/**********************************************************************************/
+
+	// switch to iframe and locate element
+	public void switchToFrameAndWaitForElement(WebElement element, ByTypes iframe_locator_type, String iframe_Locator) throws Exception
+	{
+
+
+		String currentWindow = driver.getWindowHandle();
+
+		driver.switchTo().defaultContent();
+
+		try
+		{
+
+			driver.switchTo().frame(WaitUntilWebElementIsVisibleUsingLocatorStringValue(iframe_locator_type, iframe_Locator, true));
+
+			//WaitUntilWebElementIsVisible(iframe_element);
+
+			//driver.switchTo().frame(iframe_ID);
+
+			WaitUntilWebElementIsVisible(element);
+
+			driver.switchTo().window(currentWindow);
+		}catch(NoSuchFrameException e)
+		{
+			throw new Exception(e.getMessage(), e);
+		}
+	}
 
 	
 	/**********************************************************************************

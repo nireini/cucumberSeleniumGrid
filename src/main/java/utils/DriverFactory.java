@@ -17,6 +17,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.ContactUs_Page;
 import pageObjects.Contact_Us2_Page;
+import pageObjects.Crossword_Page;
 import pageObjects.Products_Page;
 
 public class DriverFactory {
@@ -24,6 +25,7 @@ public class DriverFactory {
 	public static ContactUs_Page contactUsPage;
 	public static Products_Page productsPage;
 	public static Contact_Us2_Page contact_us2_Page;
+	public static Crossword_Page crossword_Page;
 
 
 
@@ -110,6 +112,7 @@ public class DriverFactory {
 			contactUsPage = PageFactory.initElements(driver, ContactUs_Page.class);
 			productsPage = PageFactory.initElements(driver, Products_Page.class);
 			contact_us2_Page = PageFactory.initElements(driver, Contact_Us2_Page.class);
+			crossword_Page = PageFactory.initElements(driver, Crossword_Page.class);
 		}
 		return driver;
 	}
