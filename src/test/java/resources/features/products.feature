@@ -1,3 +1,5 @@
+@products
+
 Feature: Products page
 
 Scenario Outline: validate promo code alert is visible when clicking on the special offers link

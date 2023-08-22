@@ -8,8 +8,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
+
+import com.vimalselvam.cucumber.listener.Reporter;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
@@ -27,8 +30,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import com.cucumber.listener.Reporter;
-import cucumber.api.Scenario;
+//import com.cucumber.listener.Reporter;
+
+//import cucumber.api.Scenario;
 import utils.DriverFactory;
 
 public class BasePage extends DriverFactory {
@@ -37,7 +41,7 @@ public class BasePage extends DriverFactory {
 	private static String screenshotName;
 
 	public BasePage() throws IOException {
-		this.wait = new WebDriverWait(driver, 15);
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		jsExecutor = ((JavascriptExecutor) driver);
 	}
 
@@ -78,7 +82,7 @@ public class BasePage extends DriverFactory {
 	}
 
 	public void clickOnTextFromDropdownList(WebElement list, String textToSearchFor) throws Exception {
-		Wait<WebDriver> tempWait = new WebDriverWait(driver, 30);
+		Wait<WebDriver> tempWait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		try {
 			tempWait.until(ExpectedConditions.elementToBeClickable(list)).click();
 			list.sendKeys(textToSearchFor);
@@ -93,7 +97,7 @@ public class BasePage extends DriverFactory {
 
 	public void clickOnElementUsingCustomTimeout(WebElement locator, WebDriver driver, int timeout) {
 		try {
-			final WebDriverWait customWait = new WebDriverWait(driver, timeout);
+			final WebDriverWait customWait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 			customWait.until(ExpectedConditions.refreshed(ExpectedConditions.elementToBeClickable(locator)));
 			locator.click();
 			System.out.println("Successfully clicked on the WebElement, using locator: " + "<" + locator + ">"+ ", using a custom Timeout of: " + timeout);
@@ -377,7 +381,8 @@ public class BasePage extends DriverFactory {
 		screenshotName = returnDateStamp(".jpg");
 	
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName));
-		
+
+
 		Reporter.addStepLog("Taking a screenshot!");
 		Reporter.addStepLog("<br>");
 		Reporter.addStepLog("<a target=\"_blank\", href="+ returnScreenshotName() + "><img src="+ returnScreenshotName()+ " height=200 width=300></img></a>");

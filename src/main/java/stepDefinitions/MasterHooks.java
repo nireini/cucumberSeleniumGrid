@@ -1,8 +1,8 @@
 package stepDefinitions;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import pageObjects.BasePage;
 import utils.DriverFactory;
 

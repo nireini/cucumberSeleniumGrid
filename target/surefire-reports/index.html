@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,24 +21,24 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Cucumber_Framework">
+            <a href="#" panel-name="suite-Cucumber_Framework" class="navigator-link">
               <span class="suite-name border-passed">Cucumber Framework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Cucumber_Framework">
-                    <span>C:\GIT\WebdriverUniversity\WebdriverUniversity\CucumberFramework\testng.xml</span>
+                  <a href="#" panel-name="test-xml-Cucumber_Framework" class="navigator-link ">
+                    <span>C:\GIT\java\Gianni_Cucumber\cucumberSeleniumGrid\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Cucumber_Framework">
+                  <a href="#" panel-name="testlist-Cucumber_Framework" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Cucumber_Framework">
+                  <a href="#" panel-name="group-Cucumber_Framework" class="navigator-link ">
                     <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Cucumber_Framework">
+                  <a href="#" panel-name="times-Cucumber_Framework" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Cucumber_Framework">
+                  <a href="#" panel-name="reporter-Cucumber_Framework" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Cucumber_Framework">
+                  <a href="#" panel-name="ignored-methods-Cucumber_Framework" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Cucumber_Framework">
+                  <a href="#" panel-name="chronological-Cucumber_Framework" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,13 +102,18 @@
                     </span>
                     <div class="method-list-content passed suite-Cucumber_Framework">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Products page)">feature(Products page)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" class="method navigator-link" hash-for-method="runScenario(&quot;validate promo code alert is visible when clicking on the special offers link&quot;, &quot;Products page&quot;)">runScenario("validate promo code alert is visible when clicking on the special offers link", "Products page")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" hash-for-method="feature(Submit data to webdriveruniversity.com using contact us form)">feature(Submit data to webdriveruniversity.com using contact us form)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Submit valid data via contact us form&quot;, &quot;Submit data to webdriveruniversity.com using contact us fo...)">runScenario("Submit valid data via contact us form", "Submit data to webdriveruniversity.com using contact us fo...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Cucumber_Framework" title="runners.MainRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Successful Submission - Unique Data&quot;, &quot;WebDriver University - Contact Us Page&quot;)">runScenario("Validate Successful Submission - Unique Data", "WebDriver University - Contact Us Page")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Cucumber_Framework -->
@@ -130,22 +136,32 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Products page)">
-                  </a> <!-- feature(Products page) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Products page)</span>
+                  <a name="runScenario(&quot;validate promo code alert is visible when clicking on the special offers link&quot;, &quot;Products page&quot;)">
+                  </a> <!-- runScenario("validate promo code alert is visible when clicking on the special offers link", "Products page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate promo code alert is visible when clicking on the special offers link","Products page")</span>
                   <em>
-(Runs Cucumber Feature)                  </em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="feature(Submit data to webdriveruniversity.com using contact us form)">
-                  </a> <!-- feature(Submit data to webdriveruniversity.com using contact us form) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Submit data to webdriveruniversity.com using contact us form)</span>
+                  <a name="runScenario(&quot;Submit valid data via contact us form&quot;, &quot;Submit data to webdriveruniversity.com using contact us fo...)">
+                  </a> <!-- runScenario("Submit valid data via contact us form", "Submit data to webdriveruniversity.com using contact us fo...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Submit valid data via contact us form","Submit data to webdriveruniversity.com using contact us form")</span>
                   <em>
-(Runs Cucumber Feature)                  </em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Successful Submission - Unique Data&quot;, &quot;WebDriver University - Contact Us Page&quot;)">
+                  </a> <!-- runScenario("Validate Successful Submission - Unique Data", "WebDriver University - Contact Us Page") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Successful Submission - Unique Data","WebDriver University - Contact Us Page")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,14 +169,14 @@
         </div> <!-- panel Cucumber_Framework -->
         <div panel-name="test-xml-Cucumber_Framework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\GIT\WebdriverUniversity\WebdriverUniversity\CucumberFramework\testng.xml</span>
+            <span class="header-content">C:\GIT\java\Gianni_Cucumber\cucumberSeleniumGrid\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Cucumber Framework&quot;&gt;
-  &lt;test name=&quot;Cucumber Tests&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Cucumber Framework&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Cucumber Tests&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;runners.MainRunner&quot;/&gt;
     &lt;/classes&gt;
@@ -190,7 +206,7 @@
               <span class="test-group-name">cucumber</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">feature</span>
+                <span class="method-in-group-name">runScenario</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -210,20 +226,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'feature')
+data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.MainRunner')
-data.setCell(0, 3, 7430);
+data.setCell(0, 3, 3016);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'feature')
+data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.MainRunner')
-data.setCell(1, 3, 7259);
+data.setCell(1, 3, 2937);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runners.MainRunner')
+data.setCell(2, 3, 1389);
 window.suiteTableData['Cucumber_Framework']= { tableData: data, tableDiv: 'times-div-Cucumber_Framework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Cucumber_Framework">
               </div> <!-- times-div-Cucumber_Framework -->
             </div> <!-- times-div -->
@@ -251,28 +271,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.MainRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@44114b9f)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">feature(Submit data to webdriveruniversity.com using contact us form)</span>
-                <span class="method-start">212 ms</span>
+                <span class="method-name">runScenario("Submit valid data via contact us form", "Submit data to webdriveruniversity.com using contact us fo...)</span>
+                <span class="method-start">365 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">feature(Products page)</span>
-                <span class="method-start">7471 ms</span>
+                <span class="method-name">runScenario("Validate Successful Submission - Unique Data", "WebDriver University - Contact Us Page")</span>
+                <span class="method-start">3304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate promo code alert is visible when clicking on the special offers link", "Products page")</span>
+                <span class="method-start">4693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">writeExtentReport</span>
-                <span class="method-start">14901 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">14916 ms</span>
+                <span class="method-start">7711 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

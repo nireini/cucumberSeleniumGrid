@@ -4,20 +4,28 @@ import java.io.FileInputStream;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import pageObjects.ContactUs_Page;
+import pageObjects.Contact_Us2_Page;
 import pageObjects.Products_Page;
 
 public class DriverFactory {
 	public static WebDriver driver;
 	public static ContactUs_Page contactUsPage;
 	public static Products_Page productsPage;
+	public static Contact_Us2_Page contact_us2_Page;
+
+
 
 	public WebDriver getDriver() {
 		try {
@@ -37,9 +45,13 @@ public class DriverFactory {
 				case "chrome":
 					if (null == driver) 
 					{
-					DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-					URL url = new URL("http://localhost:4444/wd/hub");
-					driver = new RemoteWebDriver(url, capabilities);
+
+						ChromeOptions chromeOptions = new ChromeOptions();
+						chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+						chromeOptions.addArguments("--remote-allow-origins=*");
+
+					URL url_chrome = new URL("http://localhost:4444/");
+					driver = new RemoteWebDriver(url_chrome, chromeOptions);
 					driver.manage().window().maximize();
 					}
 				    
@@ -48,9 +60,13 @@ public class DriverFactory {
 					
 	            	if (null == driver) 
 					{
-					DesiredCapabilities capabilitiesF = DesiredCapabilities.firefox();
-					URL urlf = new URL("http://localhost:4444/wd/hub");
-					driver = new RemoteWebDriver(urlf, capabilitiesF);
+						FirefoxOptions firefoxOptions = new FirefoxOptions();
+						firefoxOptions.setBinary("C:/Program Files/Mozilla Firefox/firefox.exe");
+						firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+
+
+					URL url_firefox = new URL("http://localhost:4444/");
+					driver = new RemoteWebDriver(url_firefox, firefoxOptions);
 					driver.manage().window().maximize();
 					}
 				}  
@@ -62,9 +78,13 @@ public class DriverFactory {
 					// code
 					if (null == driver) {
 						System.setProperty("webdriver.gecko.driver", Constant.GECKO_DRIVER_DIRECTORY);
-						DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-						capabilities.setCapability("marionette", true);
-						driver = new FirefoxDriver();
+
+						FirefoxOptions firefoxOptions = new FirefoxOptions();
+						firefoxOptions.setBinary("C:/Program Files/Mozilla Firefox/firefox.exe");
+						firefoxOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+
+						driver = new FirefoxDriver(firefoxOptions);
+						driver.manage().window().maximize();
 					}
 					break;
 
@@ -72,19 +92,11 @@ public class DriverFactory {
 					// code
 					if (null == driver) {
 						System.setProperty("webdriver.chrome.driver", Constant.CHROME_DRIVER_DIRECTORY);
-						// CHROME OPTIONS
-						driver = new ChromeDriver();
-						driver.manage().window().maximize();
-					}
-					break;
+						ChromeOptions chromeOptions = new ChromeOptions();
+						chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+						chromeOptions.addArguments("--remote-allow-origins=*");
 
-				case "ie":
-					// code
-					if (null == driver) {
-						DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
-						System.setProperty("webdriver.ie.driver", Constant.IE_DRIVER_DIRECTORY);
-						capabilities.setCapability("ignoreZoomSetting", true);
-						driver = new InternetExplorerDriver(capabilities);
+						driver = new ChromeDriver(chromeOptions);
 						driver.manage().window().maximize();
 					}
 					break;
@@ -94,9 +106,10 @@ public class DriverFactory {
 		} catch (Exception e) {
 			System.out.println("Unable to load browser: " + e.getMessage());
 		} finally {
-			driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+			//driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 			contactUsPage = PageFactory.initElements(driver, ContactUs_Page.class);
 			productsPage = PageFactory.initElements(driver, Products_Page.class);
+			contact_us2_Page = PageFactory.initElements(driver, Contact_Us2_Page.class);
 		}
 		return driver;
 	}

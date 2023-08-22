@@ -6,7 +6,9 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import cucumber.api.DataTable;
+//import cucumber.api.DataTable;
+import io.cucumber.datatable.DataTable;
+
 
 public class ContactUs_Page extends BasePage{
 	public @FindBy(xpath = "//input[@name='first_name']") WebElement textfield_FirstName;
@@ -30,7 +32,7 @@ public class ContactUs_Page extends BasePage{
 	}
 	
 	public ContactUs_Page enterLasttName(DataTable dataTable, int row, int column) throws Exception {
-		List<List<String>> data = dataTable.raw();
+		List<List<String>> data = dataTable.cells();
 		sendKeysToWebElement(textfield_LastName, data.get(row).get(column));
 		return new ContactUs_Page();
 	}
@@ -41,7 +43,7 @@ public class ContactUs_Page extends BasePage{
 	}
 	
 	public ContactUs_Page enterComments(DataTable dataTable, int row, int column) throws Exception {
-		List<List<String>> data = dataTable.raw();
+		List<List<String>> data = dataTable.cells();
 		sendKeysToWebElement(textfield_Message, data.get(row).get(column));
 		return new ContactUs_Page();
 	}

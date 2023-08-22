@@ -1,46 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Cucumber Framework" duration-ms="15143" started-at="2020-07-18T09:11:49Z" finished-at="2020-07-18T09:12:04Z">
+  <suite started-at="2023-08-21T20:10:35 BST" name="Cucumber Framework" finished-at="2023-08-21T20:10:42 BST" duration-ms="7761">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner@2344fc66]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@7dcf94f8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Cucumber Tests" duration-ms="15143" started-at="2020-07-18T09:11:49Z" finished-at="2020-07-18T09:12:04Z">
+    <test started-at="2023-08-21T20:10:35 BST" name="Cucumber Tests" finished-at="2023-08-21T20:10:42 BST" duration-ms="7761">
       <class name="runners.MainRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runners.MainRunner@2344fc66]" name="setUpClass" is-config="true" duration-ms="160" started-at="2020-07-18T12:11:49Z" finished-at="2020-07-18T12:11:49Z">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.MainRunner@7dcf94f8]" started-at="2023-08-21T20:10:35 BST" name="setUpClass" finished-at="2023-08-21T20:10:35 BST" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@44114b9f]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner@2344fc66]" name="feature" duration-ms="7259" started-at="2020-07-18T12:11:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-18T12:11:57Z">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@7dcf94f8]" started-at="2023-08-21T20:10:35 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-21T20:10:38 BST" duration-ms="2937" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Submit data to webdriveruniversity.com using contact us form]]>
+                <![CDATA["Submit valid data via contact us form"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Submit data to webdriveruniversity.com using contact us form"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runners.MainRunner@2344fc66]" name="feature" duration-ms="7430" started-at="2020-07-18T12:11:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-07-18T12:12:04Z">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@7dcf94f8]" started-at="2023-08-21T20:10:38 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-21T20:10:39 BST" duration-ms="1389" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Products page]]>
+                <![CDATA["Validate Successful Submission - Unique Data"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["WebDriver University - Contact Us Page"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="writeExtentReport()[pri:0, instance:runners.MainRunner@2344fc66]" name="writeExtentReport" is-config="true" duration-ms="15" started-at="2020-07-18T12:12:04Z" finished-at="2020-07-18T12:12:04Z">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.MainRunner@7dcf94f8]" started-at="2023-08-21T20:10:39 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-21T20:10:42 BST" duration-ms="3016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["validate promo code alert is visible when clicking on the special offers link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Products page"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- writeExtentReport -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runners.MainRunner@2344fc66]" name="tearDownClass" is-config="true" duration-ms="223" started-at="2020-07-18T12:12:04Z" finished-at="2020-07-18T12:12:04Z">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.MainRunner@7dcf94f8]" started-at="2023-08-21T20:10:42 BST" name="tearDownClass" finished-at="2023-08-21T20:10:42 BST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

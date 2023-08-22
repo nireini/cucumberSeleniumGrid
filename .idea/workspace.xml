@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="774409d5-4651-413f-aa56-c310e656a28a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/Sat_Aug_19_17_19_40_BST_2023.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_16_57_20_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_12_33_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_12_51_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_13_17_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_14_45_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_27_15_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_27_41_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_35_19_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_17_37_31_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Mon_Aug_21_20_03_55_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Sat_Aug_19_17_19_39_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Sat_Aug_19_17_19_40_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output/imgs/Sat_Aug_19_22_02_34_BST_2023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Contact_Us2_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/Contact_Us_2_Steps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/features/contucus2.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/other/chromedriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/resources/other/geckodriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/output/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUs_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ContactUs_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/properties/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/properties/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/ContactUsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/ContactUsSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/MasterHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/MasterHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/ProductSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/ProductSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/features/contactus.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/features/contactus.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/features/products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/features/products.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.webdriveruniversity/CucumberFramework/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.webdriveruniversity/CucumberFramework/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/ContactUs_Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/ContactUs_Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/Products_Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/Products_Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/properties/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stepDefinitions/ContactUsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepDefinitions/ContactUsSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stepDefinitions/MasterHooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepDefinitions/MasterHooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/stepDefinitions/ProductSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepDefinitions/ProductSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DriverFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/ReadConfigFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/ReadConfigFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/ReportsConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/formatter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/jquery-1.8.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.MainRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.MainRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/features/contactus.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/resources/features/products.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/MainRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/MainRunner.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2UD5HQtriujZFeOLDBaXLUfJmUs" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/GIT/java_backup for java automation/j3_assinement/JavaAutomation&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager" selected="TestNG.MainRunner">
+    <configuration name="Feature: contactus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/resources/features/contactus.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CucumberFramework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: contactus" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: contucus2" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/resources/features/contucus2.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CucumberFramework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: contucus2" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate Successful Submission - Unique Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/resources/features/contucus2.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="CucumberFramework" />
+      <option name="NAME_FILTER" value="^Validate Successful Submission \- Unique Data$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Submission \- Unique Data$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Submission - Unique Data" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/GIT/java/Gianni_Cucumber/cucumberSeleniumGrid/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CucumberFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="CucumberFramework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.MainRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Feature: contucus2" />
+        <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Unique Data" />
+        <item itemvalue="TestNG.C:/GIT/java/Gianni_Cucumber/cucumberSeleniumGrid/testng.xml" />
+        <item itemvalue="Cucumber Java.Feature: contactus" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="774409d5-4651-413f-aa56-c310e656a28a" name="Changes" comment="" />
+      <created>1692461224122</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692461224122</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
