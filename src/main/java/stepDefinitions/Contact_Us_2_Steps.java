@@ -17,31 +17,31 @@ public class Contact_Us_2_Steps {
         return RandomStringUtils.randomNumeric(length);
     }
 
-    @Given("I access the webdriver university contact us page")
+    @Given("I access the webdriver university contact us page2")
     public void i_access_the_webdriver_university_contact_us_page() throws IOException {
         contact_us2_Page.getContactUsPage2();
     }
 
-    @When("I enter a unique first name")
-    public void i_enter_a_unique_first_name() {
-        System.out.println("Test2");
+    @When("I enter a unique first name {word}")
+    public void i_enter_a_unique_first_name_joe(String firstName) {
+        System.out.println("firstName: " + firstName);
       //  driver.findElement(By.xpath("//input[@name='first_name']")).sendKeys("AutoFN" + generateRandomNumber(5));
     }
 
-    @And("I enter a unique last name")
-    public void i_enter_a_unique_last_name() {
-        System.out.println("Test3");
+    @And("I enter a unique last name {word}")
+    public void i_enter_a_unique_last_name(String lastName) {
+        System.out.println("lastName: " + lastName);
        // driver.findElement(By.xpath("//input[@name=\"last_name\"]")).sendKeys("AutoLN" + generateRandomNumber(5));
     }
 
-    @And("I enter a unique email address")
+    @And("I enter a unique email Joe_blogs123@mail.com")
     public void i_enter_a_unique_email_address() {
         System.out.println("Test4");
     }
 
-    @And("I enter a unique comment")
-    public void i_enter_a_unique_comment() {
-        System.out.println("Test5");
+    @And("I enter a unique comment {string}")
+    public void i_enter_a_unique_comment(String comment) {
+        System.out.println("comment: " + comment);
     }
 
     @And("I click on the submit button")

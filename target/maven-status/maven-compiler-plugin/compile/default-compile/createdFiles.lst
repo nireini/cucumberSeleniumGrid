@@ -1,11 +1,11 @@
 pageObjects\Products_Page.class
 stepDefinitions\MasterHooks.class
 stepDefinitions\ProductSteps.class
-pageObjects\BasePage.class
-pageObjects\ContactUs_Page.class
 utils\DriverFactory.class
 pageObjects\Contact_Us2_Page.class
-utils\ReadConfigFile.class
 stepDefinitions\Contact_Us_2_Steps.class
 stepDefinitions\ContactUsSteps.class
+pageObjects\BasePage.class
+pageObjects\ContactUs_Page.class
+utils\ReadConfigFile.class
 utils\Constant.class

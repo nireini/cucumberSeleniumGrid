@@ -12,19 +12,16 @@ import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 
-import com.vimalselvam.cucumber.listener.Reporter;
+
 import enums.ByTypes;
 import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
-//import com.cucumber.listener.Reporter;
 
-//import cucumber.api.Scenario;
 import utils.DriverFactory;
 
 public class BasePage extends DriverFactory {
@@ -337,19 +334,13 @@ public class BasePage extends DriverFactory {
 	public void switchToFrameAndWaitForElement(WebElement element, ByTypes iframe_locator_type, String iframe_Locator) throws Exception
 	{
 
-
 		String currentWindow = driver.getWindowHandle();
 
 		driver.switchTo().defaultContent();
 
 		try
 		{
-
 			driver.switchTo().frame(WaitUntilWebElementIsVisibleUsingLocatorStringValue(iframe_locator_type, iframe_Locator, true));
-
-			//WaitUntilWebElementIsVisible(iframe_element);
-
-			//driver.switchTo().frame(iframe_ID);
 
 			WaitUntilWebElementIsVisible(element);
 
@@ -465,11 +456,6 @@ public class BasePage extends DriverFactory {
 		screenshotName = returnDateStamp(".jpg");
 	
 		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\output\\imgs\\" + screenshotName));
-
-
-		Reporter.addStepLog("Taking a screenshot!");
-		Reporter.addStepLog("<br>");
-		Reporter.addStepLog("<a target=\"_blank\", href="+ returnScreenshotName() + "><img src="+ returnScreenshotName()+ " height=200 width=300></img></a>");
 	}
 	
 	public static String returnScreenshotName() {
