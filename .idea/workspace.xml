@@ -5,58 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="774409d5-4651-413f-aa56-c310e656a28a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_21_43_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_27_41_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_41_54_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_43_35_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_47_49_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_53_20_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_56_19_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_05_56_48_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_00_54_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_05_39_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_07_55_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_09_08_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_09_40_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_10_44_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_11_42_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_11_44_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_11_46_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_36_19_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_37_05_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_37_38_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output/imgs/Fri_Aug_25_06_38_00_BST_2023.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/Login_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/config/Youtube1.prop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/config/Youtube2.prop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/config/play/play.prop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/config/stg.prop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ConfigFileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/IConfigService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/ContactUsSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/ContactUsSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/Login_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/Contact_Us_3_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/Contact_Us_3_Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinitions/MasterHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinitions/MasterHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/MainRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/BasePage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/BasePage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stepDefinitions/ContactUsSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/stepDefinitions/ContactUsSteps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/stepDefinitions/Login.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/DriverFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utils/DriverFactory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Cucumber Framework/Cucumber Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.MainRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-runners.MainRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Cucumber Framework/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runners/MainRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runners/MainRunner.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +61,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid",
+    "last_opened_file_path": "C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/files",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -110,6 +69,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GIT\brunoGianni\cucumberSeleniumGrid\cucumberSeleniumGrid\files" />
+      <recent name="C:\GIT\brunoGianni\cucumberSeleniumGrid\cucumberSeleniumGrid\src\main\java\utils" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="enums" />
     </key>

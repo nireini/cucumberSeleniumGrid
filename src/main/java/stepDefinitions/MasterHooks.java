@@ -4,13 +4,26 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pageObjects.BasePage;
+import utils.ConfigFileImpl;
 import utils.DriverFactory;
+import utils.IConfigService;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
 
 public class MasterHooks extends DriverFactory {
+
+	public IConfigService configService;
 	
 	@Before
-	public void setup() {
+	public void setup() throws IOException {
+		configService = new ConfigFileImpl();
+
+
 		driver = getDriver();
+
 	}
 	
 	@After

@@ -1,4 +1,5 @@
 pageObjects\Products_Page.class
+utils\ConfigFileImpl.class
 stepDefinitions\MasterHooks.class
 stepDefinitions\ProductSteps.class
 utils\DriverFactory.class
@@ -9,5 +10,6 @@ pageObjects\Login_Page.class
 stepDefinitions\ContactUsSteps.class
 pageObjects\BasePage.class
 pageObjects\ContactUs_Page.class
+utils\IConfigService.class
 utils\ReadConfigFile.class
 utils\Constant.class
