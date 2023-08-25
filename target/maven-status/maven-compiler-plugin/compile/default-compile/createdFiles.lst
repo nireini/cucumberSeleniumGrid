@@ -3,7 +3,9 @@ stepDefinitions\MasterHooks.class
 stepDefinitions\ProductSteps.class
 utils\DriverFactory.class
 pageObjects\Contact_Us2_Page.class
+stepDefinitions\Login_Steps.class
 stepDefinitions\Contact_Us_2_Steps.class
+pageObjects\Login_Page.class
 stepDefinitions\ContactUsSteps.class
 pageObjects\BasePage.class
 pageObjects\ContactUs_Page.class

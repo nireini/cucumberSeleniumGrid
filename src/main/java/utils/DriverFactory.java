@@ -26,6 +26,8 @@ public class DriverFactory {
 	public static Contact_Us_3_Page contact_us_3_page;
 	public static Crossword_Page crossword_Page;
 
+	public static Login_Page login_page;
+
 
 
 	public WebDriver getDriver() {
@@ -113,6 +115,7 @@ public class DriverFactory {
 			contact_us2_Page = PageFactory.initElements(driver, Contact_Us2_Page.class);
 			contact_us_3_page = PageFactory.initElements(driver, Contact_Us_3_Page.class);
 			crossword_Page = PageFactory.initElements(driver, Crossword_Page.class);
+			login_page = PageFactory.initElements(driver, Login_Page.class);
 		}
 		return driver;
 	}

@@ -46,7 +46,8 @@ public class BasePage extends DriverFactory {
 		int attempts = 0;
 		while (!clicked && attempts < 10) {
 			try {
-				this.wait.until(ExpectedConditions.elementToBeClickable(element)).click();
+				this.wait.until(ExpectedConditions.visibilityOf(element)).click();
+				//this.wait.until(ExpectedConditions.elementToBeClickable(element)).click();
 				System.out.println("Successfully clicked on the WebElement: " + "<" + element.toString() + ">");
 				clicked = true;
 			} catch (Exception e) {
@@ -97,6 +98,10 @@ public class BasePage extends DriverFactory {
 			System.out.println("Unable to click on the WebElement, using locator: " + "<" + locator + ">" + ", using a custom Timeout of: " + timeout);
 			Assert.fail("Unable to click on the WebElement, Exception: " + e.getMessage());
 		}
+	}
+
+	public void click_element(String locator_id){
+        driver.findElement(By.id(locator_id)).click();
 	}
 	
 	/**********************************************************************************/
@@ -440,6 +445,26 @@ public class BasePage extends DriverFactory {
 			Assert.fail("Unable to close the popup, Exception: " + e.getMessage());
 		}
 	}
+
+	public String get_alert_message(){
+		String alert_message = "";
+
+		try {
+			alert_message = driver.switchTo().alert().getText();
+
+		}catch (Exception e){
+			System.out.println("Unable to get alert message text, Exception: " + e.getMessage());
+			Assert.fail("Unable to get alert message text");
+		}
+		return alert_message;
+	}
+
+	public void Compare_alert_message_with_expected_message(String Expected_message){
+		String alert_message = get_alert_message();
+		Assert.assertEquals(alert_message, Expected_message);
+	}
+
+
 	/**********************************************************************************/
 	/**********************************************************************************/
 	

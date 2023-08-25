@@ -23,7 +23,7 @@ public class ContactUsSteps extends DriverFactory {
 
 	@When("^I enter a valid last name$")
 	public void i_enter_a_valid_last_name(DataTable dataTable) throws Exception{
-		contactUsPage.enterLasttName(dataTable, 0, 1);
+		contactUsPage.enterLasttName(dataTable, 0, 0);
 	}
 
 	@And("^i enter a valid email address$")
