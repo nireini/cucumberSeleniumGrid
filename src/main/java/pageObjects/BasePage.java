@@ -449,6 +449,7 @@ public class BasePage extends DriverFactory {
 		String alert_message = "";
 
 		try {
+			wait.until(ExpectedConditions.alertIsPresent());
 			alert_message = driver.switchTo().alert().getText();
 
 		}catch (Exception e){

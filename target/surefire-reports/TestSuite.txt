@@ -1,22 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 85.54 s <<< FAILURE! -- in TestSuite
-runners.MainRunner.runScenario["Validate Successful Login", "WebDriver University - Login Page"](1) -- Time elapsed: 42.50 s <<< FAILURE!
-java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: text5555' (tried for 40 second(s) with 500 milliseconds interval)
-	at org.junit.Assert.fail(Assert.java:89)
-	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
-	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
-	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
-	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
-	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:9)
-
-runners.MainRunner.runScenario["Validate Unsuccessful Login", "WebDriver University - Login Page"](2) -- Time elapsed: 42.26 s <<< FAILURE!
-java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: text5555' (tried for 40 second(s) with 500 milliseconds interval)
-	at org.junit.Assert.fail(Assert.java:89)
-	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
-	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
-	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
-	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
-	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:15)
-
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.46 s -- in TestSuite
