@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucumber Tests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Aug 25 20:31:32 BST 2023</td>
+<td>Started on:</td><td>Sat Aug 26 11:47:00 BST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3586 ms)</td>
+<tr><td>Total time:</td><td>85 seconds (85189 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,9 +76,44 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Successful Submission - Unique Data", "WebDriver University - Contact Us Page"</td>
-<td></td>
-<td>2</td>
+<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Successful Login", "WebDriver University - Login Page"</td>
+<td><div><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: text5555&apos; (tried for 40 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:89)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
+	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
+	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
+	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
+	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace591247593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace591247593'><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: text5555&apos; (tried for 40 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:89)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
+	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
+	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
+	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
+	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:9)
+</pre></div></td>
+<td>42</td>
+<td>runners.MainRunner@10683d9d</td></tr>
+<tr>
+<td title='runners.MainRunner.runScenario()'><b>runScenario</b><br>Test class: runners.MainRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Unsuccessful Login", "WebDriver University - Login Page"</td>
+<td><div><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: text5555&apos; (tried for 40 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:89)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
+	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
+	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
+	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
+	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1577864993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1577864993'><pre>java.lang.AssertionError: WebElement is NOT visible, Exception: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: text5555&apos; (tried for 40 second(s) with 500 milliseconds interval)
+	at org.junit.Assert.fail(Assert.java:89)
+	at pageObjects.BasePage.WaitUntilWebElementIsVisible(BasePage.java:240)
+	at pageObjects.BasePage.sendKeysToWebElement(BasePage.java:162)
+	at pageObjects.Login_Page.enterUsername(Login_Page.java:25)
+	at stepDefinitions.Login_Steps.i_enter_a_unique_username(Login_Steps.java:22)
+	at ✽.I enter a username webdriver(file:///C:/GIT/brunoGianni/cucumberSeleniumGrid/cucumberSeleniumGrid/src/test/java/resources/features/login.feature:15)
+</pre></div></td>
+<td>42</td>
 <td>runners.MainRunner@10683d9d</td></tr>
 </table><p>
 </body>

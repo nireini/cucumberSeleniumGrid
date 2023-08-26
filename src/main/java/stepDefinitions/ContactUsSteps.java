@@ -1,7 +1,6 @@
 package stepDefinitions;
 
 import java.io.IOException;
-
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.And;
@@ -13,6 +12,7 @@ public class ContactUsSteps extends DriverFactory {
 	
 	@Given("^I access webdriveruniversity contact us form$")
 	public void i_access_webdriveruniversity_contact_us_form() throws IOException {
+
 		contactUsPage.getContactUsPage();
 	}
 

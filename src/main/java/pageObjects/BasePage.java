@@ -232,7 +232,7 @@ public class BasePage extends DriverFactory {
 	 **********************************************************************************/
 	public boolean WaitUntilWebElementIsVisible(WebElement element) {
 		try {
-			this.wait_Forty_seconds.until(ExpectedConditions.visibilityOf(element));
+			this.wait.until(ExpectedConditions.visibilityOf(element));
 			System.out.println("WebElement is visible using locator: " + "<" + element.toString() + ">");
 			return true;
 		} catch (Exception e) {
@@ -364,7 +364,6 @@ public class BasePage extends DriverFactory {
 		driver.get(url);
 		return new BasePage();
 	}
-
 
 	public String getCurrentURL() {
 		try {

@@ -1,4 +1,4 @@
-sut.url=https://int-stg.wnwd.com
+sut.url=http://www.webdriveruniversity.com/Contact-Us/contactus.html
 db.automation.host=***********.us-west-2.rds.amazonaws.com
 db.automation.user=ww
 db.automation.pass=**********

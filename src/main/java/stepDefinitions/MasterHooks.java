@@ -1,29 +1,36 @@
 package stepDefinitions;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pageObjects.BasePage;
-import utils.ConfigFileImpl;
 import utils.DriverFactory;
-import utils.IConfigService;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.Properties;
+import java.sql.Timestamp;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+
+
 
 public class MasterHooks extends DriverFactory {
-
-	public IConfigService configService;
 	
 	@Before
-	public void setup() throws IOException {
-		configService = new ConfigFileImpl();
-
-
+	public void setup() throws Exception {
 		driver = getDriver();
+	}
 
+	@AfterStep
+	public void captureExceptionImage(Scenario scenario) {
+		if (scenario.isFailed()) {
+			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+			String timeMilliseconds = Long.toString(timestamp.getTime());
+
+			byte[] screenshot = ((TakesScreenshot) getDriver())
+					.getScreenshotAs(OutputType.BYTES);
+			scenario.attach(screenshot, "image/png", timeMilliseconds);
+		}
 	}
 	
 	@After
